@@ -1,0 +1,83 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header h2{
+    margin-top: 60px;
+    margin-left: 120px;
+    font-size: 24px;
+    font-weight: 700;
+}
+/* top banner---------------------------- */
+
+.top-section-container{
+    display: flex;
+
+}
+.half-width{
+    flex: 1;
+   
+}
+#banner-text{
+   padding-left: 120px;
+   padding-top: 90px;   
+}
+#banner-text > h1{
+    font-size: 52px;
+    font-weight: 700px ;
+    margin: 0;
+    color: rgba(58, 58, 58, 1);
+    line-height: 1.3;
+}
+#banner-text > p{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+}
+#banner-text > a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(224, 44, 109, 1);
+    padding: 10px 24px;
+    border-radius: 41px;
+
+}
+ a:hover .fa-arrow-right{
+    transform: rotate(360deg)  scale(1.5);
+    transition: transform 0.5s ease-in-out;
+}
+.fa-arrow-right{
+    margin-left: 10px;  
+}
+.half-width img{
+width: 65%;
+margin-left: 50px;
+margin-top: 20px;
+/* border: 1px solid black; */
+}
+
+/* media query for the first section and header */
+
+@media (max-width:576px){
+    .half-width{
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+    #banner-text{
+        /* border: 1px solid red; */
+    }
+    .top-section-container{
+        flex-direction: column;
+    }
+    #banner-text{
+        padding-left: 0;
+        margin-bottom: 80px;
+    }
+    header h2{
+        margin-left: 0px;
+        padding-left: 0;
+    }
+    header{
+        display: flex;
+         justify-content: center;
+    }
+}
